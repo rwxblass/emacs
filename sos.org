@@ -1,0 +1,672 @@
+
+#+TITLE: StackOverflow Search: gnu/emacs
+* Q: GNU/Emacs for gtk+ programming [[http://stackoverflow.com/q/2874562][link]]
+:PROPERTIES:
+:ID: 2874562
+:SO_TAGS: emacs gtk
+:END:
+I want to start C/gtk+ programming in GNU/Emacs. Where can i find manual, how to configure GNU/Emacs for C and gtk+ programming. I want to make GNU/Emacs IDE for gtk+ programming 
+
+Thank you.
+ ...; 
+
+** (Read more)
+I want to start C/gtk+ programming in GNU/Emacs. Where can i find manual, how to configure GNU/Emacs for C and gtk+ programming. I want to make GNU/Emacs IDE for gtk+ programming 
+
+Thank you.
+
+
+** Answers [2]
+
+
+*** Answer no. 1
+<p>You don't need any particular setup. cc-mode is probably all you'll need, but if you'd like to create some fancier environment, you'd probably want to heed Alex's suggestion.</p>
+
+
+
+*** Answer no. 2
+<p>I'm not sure about Gtk+, but you could use <a href="http://cedet.sf.net" rel="nofollow noreferrer">CEDET</a> + <a href="http://www.emacswiki.org/emacs/CompanyMode" rel="nofollow noreferrer">company-mode</a> or <a href="http://www.emacswiki.org/emacs/AutoComplete" rel="nofollow noreferrer">auto-complete</a> to do this - at least it works fine with standard C/C++ libraries</p>
+
+
+* Q: Finding the Unicode codepoint of a character in GNU Emacs [[http://stackoverflow.com/q/236097][link]]
+:PROPERTIES:
+:ID: 236097
+:SO_TAGS: emacs unicode
+:END:
+In XEmacs this is done by the calling the function char-to-ucs on a character.  GNU Emacs does not seem to have this function.  In GNU Emacs, characters seem to be ordinary integers.  Running C-x ...;  = on a latin character reveals that the Emacs codepoint is different from the Unicode codepoint for the corresponding character.  How do I find the Unicode codepoint of the character at point in GNU Emacs?
+ ...; 
+
+** (Read more)
+In XEmacs this is done by the calling the function char-to-ucs on a character.  GNU Emacs does not seem to have this function.  In GNU Emacs, characters seem to be ordinary integers.  Running C-x = on a latin character reveals that the Emacs codepoint is different from the Unicode codepoint for the corresponding character.  How do I find the Unicode codepoint of the character at point in GNU Emacs?
+
+* Q: Letterspacing in GNU Emacs [[http://stackoverflow.com/q/5061321][link]]
+:PROPERTIES:
+:ID: 5061321
+:SO_TAGS: emacs fonts
+:END:
+
+
+I'm using GNU Emacs on 64bit Ubuntu. Monaco font works well, except the gap between each letter is too wide, thus causing each line of codes to spread too widely. I thought maybe it was a problem ...;  with the font, but then Ubuntu terminal was capable of handling the exactly same font with a narrower horizontal margin. 
+
+Is there any method I can try to adjust the horizontal linespacing in Emacs?
+ ...; 
+
+** (Read more)
+
+
+I'm using GNU Emacs on 64bit Ubuntu. Monaco font works well, except the gap between each letter is too wide, thus causing each line of codes to spread too widely. I thought maybe it was a problem with the font, but then Ubuntu terminal was capable of handling the exactly same font with a narrower horizontal margin. 
+
+Is there any method I can try to adjust the horizontal linespacing in Emacs?
+
+* Q: Gnu Emacs indenting of my typedef [[http://stackoverflow.com/q/2604673][link]]
+:PROPERTIES:
+:ID: 2604673
+:SO_TAGS: c emacs indentation
+:END:
+Gnu Emacs is insisting on indenting my typedef as follows:
+
+typedef enum {
+    horizontal,
+    vertical,
+}
+    shapes;
+
+
+I want it to indent as follows:
+
+typedef enum {
+    horizontal,
+    vertical,
+}
+shapes;
+
+
+What switch can I use to get that?
+ ...; 
+
+** (Read more)
+Gnu Emacs is insisting on indenting my typedef as follows:
+
+
+
+I want it to indent as follows:
+
+
+
+What switch can I use to get that?
+
+* Q: Is there an Intercal mode for GNU Emacs? [[http://stackoverflow.com/q/2862785][link]]
+:PROPERTIES:
+:ID: 2862785
+:SO_TAGS: emacs esoteric-languages intercal
+:END:
+I cannot find an Intercal mode for GNU Emacs. Is there one?
+ ...; 
+
+** (Read more)
+I cannot find an Intercal mode for GNU Emacs. Is there one?
+
+* Q: How do I install a MATLAB mode in GNU Emacs? [[http://stackoverflow.com/q/1367747][link]]
+:PROPERTIES:
+:ID: 1367747
+:SO_TAGS: emacs matlab octave xemacs
+:END:
+Is there an Emacs major mode for MATLAB and / or Octave files?  For those who don't know, MATLAB files generally have a ".m" file extension.
+
+My primary interest is GNU Emacs but XEmacs tips would also be appreciated.
+ ...; 
+
+** (Read more)
+Is there an Emacs major mode for MATLAB and / or Octave files?  For those who don't know, MATLAB files generally have a ".m" file extension.
+
+My primary interest is GNU Emacs but XEmacs tips would also be appreciated.
+
+* Q: GNU emacs equivalent of func-menu [[http://stackoverflow.com/q/8943705][link]]
+:PROPERTIES:
+:ID: 8943705
+:SO_TAGS: emacs gnu xemacs
+:END:
+Is there and equivalent of func-menu for GNU emacs?  I used func-menu when I had access to xemacs and I prefer its behaviour to that of the speedbar or sr-speedbar.  Specifically:
+
+
+I like that only ...;  the functions for the current file are displayed.  
+The function list can be popped up from the current frame and isn't a separate window which I may have covered up.
+The current function name shows up in mode line.
+
+
+Is there a package for GNU emacs which is a closer approximation to func-menu?
+ ...; 
+
+** (Read more)
+Is there and equivalent of func-menu for GNU emacs?  I used func-menu when I had access to xemacs and I prefer its behaviour to that of the speedbar or sr-speedbar.  Specifically:
+
+
+I like that only the functions for the current file are displayed.  
+The function list can be popped up from the current frame and isn't a separate window which I may have covered up.
+The current function name shows up in mode line.
+
+
+Is there a package for GNU emacs which is a closer approximation to func-menu?
+
+* Q: Gnu emacs window title default [[http://stackoverflow.com/q/9788336][link]]
+:PROPERTIES:
+:ID: 9788336
+:SO_TAGS: windows emacs titlebar custom-titlebar
+:END:
+I'm using Gnu emacs in Windows XP, and the default window title reads "emacs@ACH1797VM2" rather than the buffer title, which is what I want and which is the correct default behavior, as far as I know ...; .
+
+After reading https://stackoverflow.com/a/2338352/1001165, I put the following line at the end of my ~/.emacs file, but there's no change in the behavior.
+
+(setq frame-title-format "%b - emacs ...; 
+
+** (Read more)
+I'm using Gnu emacs in Windows XP, and the default window title reads "emacs@ACH1797VM2" rather than the buffer title, which is what I want and which is the correct default behavior, as far as I know.
+
+After reading https://stackoverflow.com/a/2338352/1001165, I put the following line at the end of my ~/.emacs file, but there's no change in the behavior.
+
+
+
+I can change the window title just fine with 
+
+
+
+but I want it to change automatically to match the buffer name.
+
+* Q: GNU Emacs customization - no window [[http://stackoverflow.com/q/4156491][link]]
+:PROPERTIES:
+:ID: 4156491
+:SO_TAGS: linux emacs customization
+:END:
+I am switching to GNU emacs for my python and bash scripting. I really enjoy this, but I don't like the X-window portion of emacs. As such, I always use emacs -nw <my_file> to edit my files. However ...; , when I associate my .py and .sh files with emacs, I end up opening emacs in X-window mode when I double-click on them from gnome-nautilus (Ubuntu 10.10).
+
+What I would like to know is: What should I ...; 
+
+** (Read more)
+I am switching to GNU emacs for my python and bash scripting. I really enjoy this, but I don't like the X-window portion of emacs. As such, I always use  to edit my files. However, when I associate my .py and .sh files with emacs, I end up opening emacs in X-window mode when I double-click on them from gnome-nautilus (Ubuntu 10.10).
+
+What I would like to know is: What should I add to my .emacs file in order to use emacs without X-window when I double click on my files? Note: I do want emacs to open a terminal, possibly resize it according to my specifications (already have a .sh script for that), launch itself and open my file.
+
+How should I accomplish that?
+
+Cheers!
+
+EDIT: Thanks for all the answers! I have to give the check to the most complete one, although of course it builds on the preceding ones.
+
+* Q: GNU Emacs Calculator with SBCL [[http://stackoverflow.com/q/53949625][link]]
+:PROPERTIES:
+:ID: 53949625
+:SO_TAGS: emacs common-lisp sbcl
+:END:
+I've been reading the GNU Emacs Calculator manual in search of directions for how to programmatically call the existing functions in a lisp program. 
+
+I've examined the section called 'Programming ...; -eval function available to programmers, but so far, I have not been able to call that function in SBCL.
+
+It seems that it is possible to call the calculator functions programmatically from Emacs Lisp, but I'd be curious to know if there is similar functionality in SBCL too.
+ ...; 
+
+** (Read more)
+I've been reading the GNU Emacs Calculator manual in search of directions for how to programmatically call the existing functions in a lisp program. 
+
+I've examined the section called 'Programming', but it seems to be more related to extending the calculator, rather than programming using the calculator. There is a section called 'Calling Calc from your Lisp Programs' which talks about a  function available to programmers, but so far, I have not been able to call that function in SBCL.
+
+It seems that it is possible to call the calculator functions programmatically from Emacs Lisp, but I'd be curious to know if there is similar functionality in SBCL too.
+
+* Q: How to config gnu emacs on Mac OS X [[http://stackoverflow.com/q/15250126][link]]
+:PROPERTIES:
+:ID: 15250126
+:SO_TAGS: macos emacs gnu xemacs
+:END:
+I use gnu emacs on Mac OS X, but I can't find the .emacs.
+
+And I create ~\.emacs, but it doesn't work. How can I config my emacs?
+ ...; 
+
+** (Read more)
+I use gnu emacs on Mac OS X, but I can't find the .emacs.
+
+And I create ~\.emacs, but it doesn't work. How can I config my emacs?
+
+* Q: where can I find the public key for Gnu Emacs? [[http://stackoverflow.com/q/5701388][link]]
+:PROPERTIES:
+:ID: 5701388
+:SO_TAGS: emacs gnupg
+:END:
+://lists.gnu.org/archive/html/info-gnu-emacs/2011-03/msg00000.html to do the integrity check
+
+I am not doubt the security of FSF, by the way. just curious...never use gpg before...
+
+Can you give me a link?
+
+Thanks
+ ...; I have used emacs for only half a year from 23.1 to 23.3.
+
+Every time I tried to find gpg public key for emacs so that I could check tar.gz package with tar.gz.sig released with every new version. It ...; 
+
+** (Read more)
+I have used emacs for only half a year from 23.1 to 23.3.
+
+Every time I tried to find gpg public key for emacs so that I could check tar.gz package with tar.gz.sig released with every new version. It turned out I failed every time :-].
+
+It seems I should fetch public key first, and I searched the website of emacs, but never found a sign...
+
+I can only find SHA1 checksum in the mailing list
+http://lists.gnu.org/archive/html/info-gnu-emacs/2011-03/msg00000.html to do the integrity check
+
+I am not doubt the security of FSF, by the way. just curious...never use gpg before...
+
+Can you give me a link?
+
+Thanks
+
+* Q: How to modify a XPM image using GNU Emacs? [[http://stackoverflow.com/q/10311467][link]]
+:PROPERTIES:
+:ID: 10311467
+:SO_TAGS: emacs
+:END:
+
+  Possible Duplicate:
+  How to open and edit images in Emacs  
+
+
+
+
+I know that Vim and XEmacs can modify XPM images.
+How can I do it using GNU Emacs?
+
+
+ ...; 
+
+** (Read more)
+
+  Possible Duplicate:
+  How to open and edit images in Emacs  
+
+
+
+
+I know that Vim and XEmacs can modify XPM images.
+How can I do it using GNU Emacs?
+
+
+* A: How to set the font size in Emacs? [[http://stackoverflow.com/q/294664][link]]
+:PROPERTIES:
+:ID: 294664
+:SO_TAGS: emacs fonts emacs-faces
+:END:
+From Emacswiki, GNU Emacs 23 has a built-in key combination:
+
+
+  C-xC-+ and C-xC-- to increase or
+  decrease the buffer text size
+
+ ...; 
+
+** (Read more)
+From Emacswiki, GNU Emacs 23 has a built-in key combination:
+
+
+  C-xC-+ and C-xC-- to increase or
+  decrease the buffer text size
+
+* Q: How do I kill the *GNU Emacs* buffer when emacs starts? [[http://stackoverflow.com/q/3869159][link]]
+:PROPERTIES:
+:ID: 3869159
+:SO_TAGS: emacs
+:END:
+
+  Possible Duplicate:
+  Unable to hide welcome screen in Emacs  
+
+
+
+
+Is there a way I can prevent the GNU Emacs buffer from coming up when emacs starts?
+ ...; 
+
+** (Read more)
+
+  Possible Duplicate:
+  Unable to hide welcome screen in Emacs  
+
+
+
+
+Is there a way I can prevent the GNU Emacs buffer from coming up when emacs starts?
+
+* Q: How to scroll line by line in GNU Emacs? [[http://stackoverflow.com/q/1128927][link]]
+:PROPERTIES:
+:ID: 1128927
+:SO_TAGS: emacs
+:END:
+To put it simply, I'm trying to get scrolling in emacs like in vim and most other editors; when I'm for example, two lines from the bottom/top, and I press down/up (Ctrl-p,n, ↑,↓) it goes only one line up or down, not half the screen.
+ ...; 
+
+** (Read more)
+To put it simply, I'm trying to get scrolling in emacs like in vim and most other editors; when I'm for example, two lines from the bottom/top, and I press down/up (Ctrl-p,n, ↑,↓) it goes only one line up or down, not half the screen.
+
+* Q: in GNU Emacs OSX, how to hide title bar? [[http://stackoverflow.com/q/24021624][link]]
+:PROPERTIES:
+:ID: 24021624
+:SO_TAGS: macos emacs fullscreen
+:END:
+In GNU Emacs on OSX Mavericks, how can I hide the title bar even when I'm not in Mavericks full-screen mode? I'd rather have my Emacs fill the entire frame. 
+
+
+ ...; 
+
+** (Read more)
+In GNU Emacs on OSX Mavericks, how can I hide the title bar even when I'm not in Mavericks full-screen mode? I'd rather have my Emacs fill the entire frame. 
+
+
+* Q: Fade unfocused GNU Emacs frame (X window) [[http://stackoverflow.com/q/10914772][link]]
+:PROPERTIES:
+:ID: 10914772
+:SO_TAGS: linux emacs
+:END:
+Is it possible to make GNU Emacs 24 dim unfocused windows a bit?  For example, I can set my rxvt-unicode clients to become darker when their windows don't have focus with this string in ~/.Xdefaults ...; :
+
+URxvt*fading: 50
+
+
+It greatly reduces discomfort when you have a lot of terminal windows on 2+ monitors.  I would like a similar feature in Emacs, but couldn't google up anything.
+
+Here is how it looks like with urxvt (png, 1.43 MB)
+ ...; 
+
+** (Read more)
+Is it possible to make GNU Emacs 24 dim unfocused windows a bit?  For example, I can set my  clients to become darker when their windows don't have focus with this string in :
+
+
+
+It greatly reduces discomfort when you have a lot of terminal windows on 2+ monitors.  I would like a similar feature in Emacs, but couldn't google up anything.
+
+Here is how it looks like with urxvt (png, 1.43 MB)
+
+* Q: In GNU Emacs, what is `[C-tab]`? [[http://stackoverflow.com/q/4045787][link]]
+:PROPERTIES:
+:ID: 4045787
+:SO_TAGS: emacs keyboard elisp
+:END:
+In GNU Emacs, what is [C-tab]? Consider:
+
+(version)
+"GNU Emacs 23.2.1 (i386-mingw-nt5.1.2600)
+ of 2010-05-08 on G41R2F1"
+
+(defun key-binding-test ()
+  (interactive)
+  (insert " key-binding-test ...; 
+
+** (Read more)
+In GNU Emacs, what is ? Consider:
+
+
+
+For a single letter control character, a character constant must be used in the vector:
+
+
+
+ can be evaluated  in the  buffer:
+
+
+
+However to bind C-Tab:
+
+
+
+When I try to evalulate  though:
+
+
+
+Comparing the evaluation of the vectors:
+
+
+* Q: Executing LISP programs in GNU Emacs [[http://stackoverflow.com/q/20486146][link]]
+:PROPERTIES:
+:ID: 20486146
+:SO_TAGS: emacs lisp sicp
+:END:
+I've been learning to use the GNU Emacs lately and have developed quite an interest in using the same as my text editor to replace text editors in my Linux Mint Olivia. I've also been watching MIT ...;  internet for how to write and execute LISP programs in Emacs, some like the ones that are shown in MIT lectures. I've tried the 'lisp-mode', 'lisp-interaction-mode', etc. but no luck.
+
+Any help would be higly appreciated.
+ ...; 
+
+** (Read more)
+I've been learning to use the GNU Emacs lately and have developed quite an interest in using the same as my text editor to replace text editors in my Linux Mint Olivia. I've also been watching MIT videos on Structural Interpretation of Computer Programs and am interested try my hand at LISP to solve problems like the ones that are there at project Euler.
+I have tried a lot to search on the internet for how to write and execute LISP programs in Emacs, some like the ones that are shown in MIT lectures. I've tried the 'lisp-mode', 'lisp-interaction-mode', etc. but no luck.
+
+Any help would be higly appreciated.
+
+* Q: GNU Emacs: skeleton-mode, is it still used? [[http://stackoverflow.com/q/2866759][link]]
+:PROPERTIES:
+:ID: 2866759
+:SO_TAGS: emacs editor
+:END:
+given all the possible solutions to have a template system with GNU Emacs, what do people use today ? I am still using skeleton-mode but as I read it here and there, we must be really few to do so ...; 
+
+** (Read more)
+given all the possible solutions to have a template system with GNU Emacs, what do people use today ? I am still using skeleton-mode but as I read it here and there, we must be really few to do so.
+
+What are you using and why ? (maybe I could switch to a more popular tool).
+
+For example, given this snippet:
+
+
+
+(credits: http://www.foldr.org/~michaelw/log/programming/lisp/defpackage-skeleton)
+
+which (modern) template mode could do the same (and how ;)) ?
+
+Cheers
+
+* Q: Proper configuration of packages in GNU Emacs [[http://stackoverflow.com/q/45041399][link]]
+:PROPERTIES:
+:ID: 45041399
+:SO_TAGS: emacs packages gnu
+:END:
+I have been having trouble in getting the files I have installed on GNU Emacs(through the package archive) to work. The files are properly installed, but don't seem to have any effect. Below is the ...;  package archives section of my .emacs file, which were added automatically when I installed the packages:
+
+     '(package-archives
+       (quote
+        (("gnu" . "http://elpa.gnu.org/packages ...; 
+
+** (Read more)
+I have been having trouble in getting the files I have installed on GNU Emacs(through the package archive) to work. The files are properly installed, but don't seem to have any effect. Below is the package archives section of my .emacs file, which were added automatically when I installed the packages:
+
+
+
+The configuration section in the information section of the packages says for example for flycheck-irony, to include:
+
+
+
+This appears nowhere in my .emacs file, causing me to wonder if I am missing something. Any help would be appreciated.
+
+* Q: Indentation in nxml-mode in GNU Emacs [[http://stackoverflow.com/q/18485078][link]]
+:PROPERTIES:
+:ID: 18485078
+:SO_TAGS: emacs xhtml indentation nxml
+:END:
+Here is an example how XEmacs makes indentation in xml-mode of a xhtml document: 
+
+    <div><a id="page_1"/>
+        <p>text</p>
+    </div>
+
+
+in nxml-mode in GNU Emacs it looks like this:
+
+    <div ...; 
+
+** (Read more)
+Here is an example how XEmacs makes indentation in xml-mode of a xhtml document: 
+
+
+
+in nxml-mode in GNU Emacs it looks like this:
+
+
+
+This is the result of auto-indentation which belongs to indent-line-function.
+I also know the possibility to avoid this behavior by writing the closing a-Tag to a new line. But this appearance I use is necessary for my workflow.
+
+Have somebody any suggestions to solve this problem?
+
+* Q: Do I need to know Emacs Lisp in order to use GNU/Emacs [[http://stackoverflow.com/q/3210135][link]]
+:PROPERTIES:
+:ID: 3210135
+:SO_TAGS: emacs elisp
+:END:
+Recently, I began studying GNU/Emacs. Was very easy to use program. Studied its structure. Tuned nice color for me. Configure it to class on C programming. Everything seemed normal. But now the ...;  question arose of GNU/Emacs lisp. Should I really spend time to study Emacs Lisp if I did not develop itself Emacs and will only use it like ide for C/C++ development, mail, jabber and etc...
+
+The fact is ...; 
+
+** (Read more)
+Recently, I began studying GNU/Emacs. Was very easy to use program. Studied its structure. Tuned nice color for me. Configure it to class on C programming. Everything seemed normal. But now the question arose of GNU/Emacs lisp. Should I really spend time to study Emacs Lisp if I did not develop itself Emacs and will only use it like ide for C/C++ development, mail, jabber and etc...
+
+The fact is that when I edit my .emacs I understand that I write. But I write mostly ready-made scripts or if its something they are very simple.
+
+Thank you.
+
+* Q: how to get transparent window in GNU Emacs on OSX? [[http://stackoverflow.com/q/21946382][link]]
+:PROPERTIES:
+:ID: 21946382
+:SO_TAGS: macos emacs terminal org-mode aquamacs
+:END:
+I'm on GNU Emacs in OSX Mavericks and I'm trying to make my background transparent but not the text. 
+
+There's an easy way to make the whole frame transparent:
+
+(set-frame-parameter (selected-frame ...;  the text to be a solid black. Someone on the Emacs Wiki said that such an implementation would have to be OS-specific. So, does anyone know how to do this for OSX?
+
+With desired settings, Emacs would ...; 
+
+** (Read more)
+I'm on GNU Emacs in OSX Mavericks and I'm trying to make my background transparent but not the text. 
+
+There's an easy way to make the whole frame transparent:
+
+
+
+But this makes the whole frame transparent/translucent, including the text. I want only the frame background to be transparent and the text to be a solid black. Someone on the Emacs Wiki said that such an implementation would have to be OS-specific. So, does anyone know how to do this for OSX?
+
+With desired settings, Emacs would look like this:
+.
+
+Again, I want the window 100% transparent and the foreground text 100% opaque, and it should work in Emacs' full-screen mode.
+
+* Q: GNU Emacs closing beginning/end of buffer sound [[http://stackoverflow.com/q/39084498][link]]
+:PROPERTIES:
+:ID: 39084498
+:SO_TAGS: scroll emacs24
+:END:
+I just started on GNU emacs, but I want to close the sound (windows not-allowed sound?) when I try to scroll end of buffer, or beginning of buffer. I searched options page (or prefereces) in emacs, I can't find it. Anyone know any solution (excepts closing speaker :)
+ ...; 
+
+** (Read more)
+I just started on GNU emacs, but I want to close the sound (windows not-allowed sound?) when I try to scroll end of buffer, or beginning of buffer. I searched options page (or prefereces) in emacs, I can't find it. Anyone know any solution (excepts closing speaker :)
+
+* Q: Pasting with mouse-select in GNU Emacs [[http://stackoverflow.com/q/9894313][link]]
+:PROPERTIES:
+:ID: 9894313
+:SO_TAGS: emacs xemacs
+:END:
+ switch from XEmacs to GNU Emacs, and I'm looking to see if there is similar functionality there, or perhaps I could provide it with a custom module (I am very bad at Lisp, unfortunately).
+ ...; 
+
+** (Read more)
+There is an functionality in XEmacs that if the user selects a region with the mouse while holding Ctrl, the selected region will be automatically pasted at the current cursor position.
+
+In other words, if you need to quickly copy a short block of text from some open buffer to a new spot, you put the cursor there, and then do Ctrl-mouse-select and it works.
+
+Unfortunately, I recently had to switch from XEmacs to GNU Emacs, and I'm looking to see if there is similar functionality there, or perhaps I could provide it with a custom module (I am very bad at Lisp, unfortunately).
+
+* Q: STYLE-WARNING: in SLIME 2.12 SBCL 1.2.7 Gnu Emacs 25 [[http://stackoverflow.com/q/28531608][link]]
+:PROPERTIES:
+:ID: 28531608
+:SO_TAGS: emacs common-lisp compiler-warnings sbcl slime
+:END:
+ am totally new to EMACS and SLIME and I'd like to know what does this mean and how to fix it.
+
+I use Windows 8 (64-bit), GNU Emacs 25.0.50.1 (x86_64-w64-mingw32),  SLIME 2.12, and SBCL 1.2.7
+ ...; I get this message when starting SLIME:
+
+; loading #P"d:/lisp/slime-2.12/swank-loader.lisp"
+STYLE-WARNING: redefining EMACS-INSPECT (#<SB-PCL:SYSTEM-CLASS T>) in DEFMETHOD
+
+
+The REPL works normal.
+
+I ...; 
+
+** (Read more)
+I get this message when starting SLIME:
+
+
+
+The REPL works normal.
+
+I am totally new to EMACS and SLIME and I'd like to know what does this mean and how to fix it.
+
+I use Windows 8 (64-bit), GNU Emacs 25.0.50.1 (x86_64-w64-mingw32),  SLIME 2.12, and SBCL 1.2.7
+
+* Q: gnu emacs on windows - how to maximize without mouse? [[http://stackoverflow.com/q/16674956][link]]
+:PROPERTIES:
+:ID: 16674956
+:SO_TAGS: windows emacs
+:END:
+GNU Emacs on windows:
+
+I have discovered that my usual way of maximizing a window without the mouse does not work.  
+
+I usually (in other apps/editors this works, gvim for instance) would press ALT ...; +SPACE to bring up the top-left corner menu, and then press X (the hot key for maximize). 
+
+To restore a window would be ALT+SPACE and then the R key.
+
+For some reason this doesn't work in gnu emacs.... is there anything i can do to stop reaching for my mouse constantly? 
+ ...; 
+
+** (Read more)
+GNU Emacs on windows:
+
+I have discovered that my usual way of maximizing a window without the mouse does not work.  
+
+I usually (in other apps/editors this works, gvim for instance) would press ALT+SPACE to bring up the top-left corner menu, and then press X (the hot key for maximize). 
+
+To restore a window would be ALT+SPACE and then the R key.
+
+For some reason this doesn't work in gnu emacs.... is there anything i can do to stop reaching for my mouse constantly? 
+
+* Q: redo+.el on GNU Emacs 24 [[http://stackoverflow.com/q/15429771][link]]
+:PROPERTIES:
+:ID: 15429771
+:SO_TAGS: emacs
+:END:
+I'm trying to use redo+.el in GNU Emacs 24 on OSX. When I try to load the file (using M-x load-file, or (require 'redo+) in my .emacs file) I get this error:
+
+Attempt to modify read-only object
+
+
+The ...; ..." menu-find-file-existing :enable (menu-bar-non-minibuffer-window-p) :help "Read an existing file into an Emacs buffer" :image (find-image (cond ((not (display-color-p)) (quote ...; 
+
+** (Read more)
+I'm trying to use redo+.el in GNU Emacs 24 on OSX. When I try to load the file (using , or  in my  file) I get this error:
+
+
+
+The full output from the debugger is as follows (also as a Gist here).
+
+
+
+I've used the exact same  file successfully before on an Ubuntu system. Any ideas what I can do get around this?
+
+UPDATE
+
+Following information from this URL (thanks Daniel Martin) I can get the module to load to work by commenting out this chunk of code:
+
+
+
+This doesn't bother me much because I only ever use undo/redo via keyboard shortcuts, not from the menu items.
+However the link suggested that this code can be used to get around it, but honestly I can't figure out how to do that (I'm rubbish at Lisp)...
+
+
+
